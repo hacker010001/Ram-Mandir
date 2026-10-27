@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ram Mandir — Ayodhya Rising.</title>
+<link rel="preload" as="image" href="frames/ezgif-frame-001.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="sequence.css" />
+</head>
+<body>
+
+<div class="scroll-track">
+  <div class="sticky-viewport">
+
+    <!-- cinematic frame sequence -->
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="cinema-scrim" aria-hidden="true"></div>
+
+    <div class="stage">
+
+      <!-- ───────── NAV ───────── -->
+      <header class="nav">
+        <a class="brand" href="#">
+          <svg class="brand__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 1.6c.5 4.9 3 7.4 8 8-5 .6-7.5 3.1-8 8-.5-4.9-3-7.4-8-8 5-.6 7.5-3.1 8-8Z" fill="currentColor"/>
+            <circle cx="20.7" cy="3.3" r="1.05" fill="currentColor"/>
+          </svg>
+          <span>AYODHYA</span>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a class="is-active" href="#">Home</a>
+          <a href="#">History</a>
+          <a href="#">Architecture</a>
+          <a href="#">Darshan</a>
+          <a href="#">Visit</a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="icon-btn" type="button" aria-label="Explore the mandir">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 3.2c.42 4.1 2.5 6.2 6.7 6.7-4.2.5-6.28 2.6-6.7 6.7-.42-4.1-2.5-6.2-6.7-6.7 4.2-.5 6.28-2.6 6.7-6.7Z"/>
+            </svg>
+          </button>
+
+          <a class="pill" href="#">
+            <span>Plan Your Visit</span>
+            <span class="pill__dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h13"/><path d="M12.5 6.5 18 12l-5.5 5.5"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </header>
+
+      <!-- ───────── HERO ───────── -->
+      <main class="hero">
+
+        <div class="copy">
+          <p class="eyebrow"><span class="eyebrow__rule"></span>The eternal abode of Shri Ram</p>
+
+          <h1 class="title">Ram Mandir.<br />Ayodhya Rising.</h1>
+
+          <p class="lede">In the heart of Ayodhya, the Ram Mandir stands as a timeless symbol of faith, heritage, and devotion.</p>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="#">
+              <span>Plan Your Visit</span>
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h15"/><path d="M12.5 5.5 19 12l-6.5 6.5"/>
+              </svg>
+            </a>
+
+            <button class="trailer" type="button">
+              <span class="trailer__play">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M9 7.4v9.2L16.6 12 9 7.4Z"/>
+                </svg>
+              </span>
+              <span>Watch the Film</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- slide rail (01 / 02 / 03) -->
+        <div class="rail" aria-hidden="true">
+          <span class="rail__num is-active">01</span>
+          <i class="rail__line"></i>
+          <span class="rail__num">02</span>
+          <span class="rail__num">03</span>
+        </div>
+
+        <!-- bottom row -->
+        <div class="foot">
+          <div class="foot__left">
+            <p class="foot__title">Visit the Mandir</p>
+            <p class="foot__text">In Ayodhya, the mandir welcomes devotees from across the world.</p>
+          </div>
+
+          <div class="foot__right">
+            <p class="foot__line"><span class="foot__dash"></span>More than a monument</p>
+            <p class="foot__tag"><span class="foot__dash"></span>It’s a blessing.</p>
+            <span class="foot__rule"></span>
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="sequence.js" defer></script>
+
+</body>
+</html>
